@@ -15,7 +15,8 @@
 <body>
 <p id="main_p"></p>
 <script type="application/javascript">
-    document.getElementById("main_p").innerHTML = Telegram.WebApp.initData
+    document.getElementById("main_p").innerHTML = JSON.stringify(Telegram.WebApp.initDataUnsafe)
+    Telegram.WebApp.expand()
 </script>
 <h1>Welcome to My Website</h1>
 </body>
